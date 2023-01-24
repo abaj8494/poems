@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[twoside]{article}
 
 \usepackage{geometry}
 \usepackage{rotating}
@@ -6,6 +6,10 @@
 \usepackage{multicol}
 \usepackage{setspace}
 \usepackage{graphicx}
+\usepackage{pgfornament}
+
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
 
 %\setlength{\columnsep}{-5.5cm}
 
@@ -16,7 +20,9 @@
     right=10mm
 }
 
+\fancyhf{}
 \fancyhead[RO]{\underline{\small{\uppercase{the love song of j. alfred prufrock}}}}
+\fancyfoot[LE]{\begin{turn}{45}\pgfornament[anchor=north west,width=1cm]{122}\end{turn}}
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 
@@ -62,7 +68,7 @@
     \begin{minipage}{6cm}
         \emph{S'io credessi che mai risposta fosse\\
         a persona che mai tornasse al mondo,\\
-        questa fiamma staria senza piu scosse.\\ % there should be a bar over u in piu
+        questa fiamma staria senza pi\=u scosse.\\ % there should be a bar over u in piu
         Ma per ci\`o che giammai di questo fondo\\
         non-torn\'o vivo alcun, s'i'odo il vero\\
         senza tema d'infamia ti rispondo.
@@ -115,13 +121,13 @@
 \begin{flushleft}
     \doublespacing
     And indeed there will be time\\
-    To wonder, 'Do I dare?' and, 'Do I dare?'\\
+    To wonder, `Do I dare?' and, `Do I dare?'\\
     Time to turn back and descend the stair,\\
     With a bald spot in the middle of my hair\\
-    (They will say:'How his hair is growing thin!')\\
+    (They will say:`How his hair is growing thin!')\\
     My morning coat, my collar mounting firmly to the chin,\\
     My necktie rich and modest, but asserted by a simple pin---\\
-    (They will say: 'But how his arms and legs are thin!')\\
+    (They will say: `But how his arms and legs are thin!')\\
     Do I dare\\
     Disturb the universe?\\
     In a minute there is time\\
@@ -218,7 +224,7 @@ Scuttling across the floors of silent seas.\\
     Would it have been worth while\\
     If one, settling a pillow or throwing off a shawl,\\
     And turning toward the window, should say:\\
-    \quad{}'That is not it at all,\\
+    \quad{}`That is not it at all,\\
     \quad{}That is not what I meant at all.'
     \begin{center}[13]\end{center}
 \end{minipage}
@@ -241,7 +247,7 @@ Scuttling across the floors of silent seas.\\
         To say: 'I am Lazarus, come from the dead, \\
         Come back to tell you all, I shall tell you all' ---\\
         If one, settling a pillow by her head,\\
-        \quad{} Should say: 'That is not what I meant at all.\\
+        \quad{} Should say: `That is not what I meant at all.\\
         \quad{} That is not it, at all'
         \begin{center}[12]\end{center}
         \end{flushright}
@@ -268,46 +274,43 @@ Scuttling across the floors of silent seas.\\
 
 \begin{multicols}{2}
 
-\begin{minipage}{8cm}
+\begin{minipage}{9cm}
     \smallskip
-    \begin{minipage}{8cm}
-        \centering
+    \doublespacing
+    \begin{minipage}{9cm}
+        \flushright
         \reflectbox{I have seen them riding seaward on the waves}\\
         \reflectbox{Combing the white hair of the waves blown back}\\
-        \reflectbox{When the wind blows the water white and black.}
-        \begin{center}[18]\end{center}
+    \reflectbox{When the wind blows the water white and black.\centering{}[18]}
     \end{minipage}
 
-    \begin{minipage}{8cm}
-        \centering
+    \begin{minipage}{9cm}
+        \flushright
         \reflectbox{We have lingered in the chambers of the sea}\\
         \reflectbox{By sea-girls wreathed with seaweed red and brown}\\
-        \reflectbox{Till human voices wake us, and we drown.}
-        \begin{center}[19]\end{center}
+        \reflectbox{Till human voices wake us, and we drown. \centering{}[19]}
     \end{minipage}
 \end{minipage}
 
 \begin{minipage}{9cm}
-    \small
+    \doublespacing
     \begin{minipage}{9cm}
-    \flushright
-    I grow old... \reflectbox{I grow old...}\\
-    \reflectbox{I shall wear the bottoms of my trousers rolled.}
-    \begin{center}[15]\end{center}
+        \flushright
+        I grow old... \reflectbox{I grow old...}\\
+        \reflectbox{I shall wear the bottoms of my trousers rolled. \centering{}[15]}
     \end{minipage}
 
     \begin{minipage}{9cm}
-    \flushright
-    \reflectbox{Shall I part my hair behind? Do I dare to eat a peach?}\\
-    \reflectbox{I shall wear white flannel trousers, and walk upon the beach.}\\
-    \reflectbox{I have heard the mermaids singing, each to each.}
-    \begin{center}[16]\end{center}
+        \flushright
+        \small
+        \reflectbox{Shall I part my hair behind? Do I dare to eat a peach?}\\
+        \reflectbox{I shall wear white flannel trousers, and walk upon the beach.}\\
+        \reflectbox{I have heard the mermaids singing, each to each. \centering{}[16]}
     \end{minipage}
 
     \begin{minipage}{9cm}
-    \flushright
-    \reflectbox{I do not think that they will sing to me.}
-    \begin{center}[17]\end{center}
+        \flushright
+        \reflectbox{I do not think that they will sing to me. \centering{}[17]}
     \end{minipage}
 
 \end{minipage}
